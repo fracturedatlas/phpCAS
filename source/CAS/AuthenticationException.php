@@ -102,6 +102,8 @@ implements CAS_Exception
         }
         $client->printHTMLFooter();
         phpCAS::traceExit();
+        
+        $this->message = $err_msg ?: $failure;
     }
 
 }
